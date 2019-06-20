@@ -1,0 +1,11 @@
+$xs-phone: '(max-width: 320px)';
+$sm-phone: '(max-width: 767px)';
+$md-phone: '(max-width: 991px)';
+$md-up-phone: '(min-width: 992px)';
+$landscape-ipad: '(min-width: 992px) and (max-width: 1199px)';
+$lg-desktop: '(min-width: 1200px)';
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
